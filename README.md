@@ -1,4 +1,62 @@
-개인 프로젝트
+
+
+개인 프로젝트 작업 페이지 입니다
+
+TREE 구조 입니다.
+
+```plaintext
+└── main
+    ├── java
+    │   └── com
+    │       └── example
+    │           ├── dao
+    │           │   ├── BoardDAO.java
+    │           │   └── MemberDAO.java
+    │           └── dto
+    │               ├── BoardDTO.java
+    │               └── MemberDTO.java
+    ├── SQL
+    │   └── register_hr.sql
+    └── webapp
+        ├── bbs.json
+        ├── board.html
+        ├── board_write.html
+        ├── css
+        │   └── style.css
+        ├── images (image files)
+        ├── index.html
+        ├── js
+        │   ├── jquery.tmpl.min.js
+        │   └── script.js
+        ├── json
+        │   └── bbs.json
+        ├── json01.json
+        ├── json02.json
+        ├── JSP
+        │   ├── delete_post.jsp
+        │   ├── edit_post.jsp
+        │   ├── getPosts.jsp
+        │   ├── login.jsp
+        │   ├── logout.jsp
+        │   ├── mypage.jsp
+        │   ├── navbar.jsp
+        │   └── save_post.jsp
+        ├── login.html
+        ├── login_process.jsp
+        ├── logout.jsp
+        ├── META-INF
+        │   └── MANIFEST.MF
+        ├── mypage.html
+        ├── navbar.html
+        ├── register.html
+        ├── register_process.jsp
+        ├── WEB-INF
+        │   ├── lib
+        │   │   ├── jstl-1.2.jar
+        │   │   └── standard-1.1.2.jar
+        │   └── web.xml
+        └── write_process.jsp
+```
 
 UUID
 
@@ -70,63 +128,5 @@ DAO와 DTO는 MVC(Model-View-Controller) 아키텍처 패턴의 구현에 핵심
 결론:
 DAO와 DTO는 JSP와 데이터베이스 간의 상호작용을 더 구조화되고 모듈화된 방식으로 처리할 수 있게 해줍니다. 이들은 코드의 재사용성을 높이고 유지보수를 용이하게 하며, 보안을 강화하고 가독성을 향상시키는 데 기여합니다. 이러한 이유로, DAO와 DTO를 사용하는 것이 권장됩니다.
 
-
-개인 프로젝트 작업 페이지 입니다
-
-TREE 구조 입니다.
-
-```plaintext
-└── main
-    ├── java
-    │   └── com
-    │       └── example
-    │           ├── dao
-    │           │   ├── BoardDAO.java
-    │           │   └── MemberDAO.java
-    │           └── dto
-    │               ├── BoardDTO.java
-    │               └── MemberDTO.java
-    ├── SQL
-    │   └── register_hr.sql
-    └── webapp
-        ├── bbs.json
-        ├── board.html
-        ├── board_write.html
-        ├── css
-        │   └── style.css
-        ├── images (image files)
-        ├── index.html
-        ├── js
-        │   ├── jquery.tmpl.min.js
-        │   └── script.js
-        ├── json
-        │   └── bbs.json
-        ├── json01.json
-        ├── json02.json
-        ├── JSP
-        │   ├── delete_post.jsp
-        │   ├── edit_post.jsp
-        │   ├── getPosts.jsp
-        │   ├── login.jsp
-        │   ├── logout.jsp
-        │   ├── mypage.jsp
-        │   ├── navbar.jsp
-        │   └── save_post.jsp
-        ├── login.html
-        ├── login_process.jsp
-        ├── logout.jsp
-        ├── META-INF
-        │   └── MANIFEST.MF
-        ├── mypage.html
-        ├── navbar.html
-        ├── register.html
-        ├── register_process.jsp
-        ├── WEB-INF
-        │   ├── lib
-        │   │   ├── jstl-1.2.jar
-        │   │   └── standard-1.1.2.jar
-        │   └── web.xml
-        └── write_process.jsp
-```
 
 
