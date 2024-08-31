@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- 네비게이션 바의 브랜드 로고, '홈'이라는 텍스트로 홈 페이지(index.html)로 연결됨 -->
+        <a class="navbar-brand" href="index.html">홈</a>
+        
+        <!-- 화면 크기가 작아질 때 네비게이션 바의 항목들을 감추고 토글 버튼을 통해 열 수 있게 하는 설정 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- 네비게이션 바의 항목들 -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Home 링크 -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <!-- 게시판 링크 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="board.html">게시판</a>
+                </li>
+
+                <!-- MyPage 링크 -->
+                <!-- MyPage.html 파일의 경로를 올바르게 수정 -->
+                <li class="nav-item">
+                    <a class="nav-link" id="myPageLink" href="/SoloProject_Front/MyPage.html">MyPage</a>
+                </li>
+                
+                <!-- 회원가입 링크 -->
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">회원가입</a>
+                </li>
+
+                <!-- 로그인 링크 -->
+                <!-- 이 링크는 사용자가 로그인하지 않았을 때만 표시됩니다. -->
+                <li class="nav-item">
+                    <a class="nav-link" id="loginLink" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 세션 스토리지에서 로그인 정보를 가져옴
+    const userEmail = sessionStorage.getItem("userEmail");
+    
+    if (userEmail) {
+        // 로그인된 사용자가 있을 경우 MyPage 링크를 표시하고, Login 링크를 숨깁니다.
+        const myPageButton = document.getElementById("myPageLink");
+        myPageButton.style.display = "inline-block";  // MyPage 버튼을 표시
+
+        const loginButton = document.getElementById("loginLink");
+        if (loginButton) {
+            loginButton.style.display = "none";  // 로그인 버튼을 숨김
+        }
+    } else {
+        console.log("No user logged in");  // 사용자가 로그인하지 않은 경우 로그 출력
+    }
+});
+</script>
