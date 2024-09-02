@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif; /* Arial 폰트를 기본 폰트로 사용합니다. */
     margin: 0; /* 페이지의 기본 마진을 제거하여 여백을 없앱니다. */
     padding: 0 ; /*  0으로 설정하여 여백을 없앱니다. */
+<<<<<<< HEAD
     background-color: aliceblue !important; /* 페이지 배경색을 설정합니다. */
+=======
+    background-color: #CECEF6 !important; /* 페이지 배경색을 설정합니다. */
+>>>>>>> 6784b74affd87bda72f1f08a4dcb6ef091c9c457
     color: #FFFFFF;
 }
 
