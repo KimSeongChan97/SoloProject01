@@ -24,11 +24,7 @@
                 <div class="card-body">
                     <h5 class="card-title" id="userName">이름: </h5>
                     <p class="card-text" id="userEmail">이메일: </p>
-<<<<<<< HEAD
                     <!-- <p class="card-text" id="memberId">아이디: </p> -->
-=======
-                    <p class="card-text" id="memberId">아이디: </p>
->>>>>>> 6784b74affd87bda72f1f08a4dcb6ef091c9c457
                     <p class="card-text" id="userPassword">비밀번호: </p>
                 </div>
             </div>
@@ -39,7 +35,6 @@
         window.onload = function() {
             var userName = sessionStorage.getItem("userName");
             var userEmail = sessionStorage.getItem("userEmail");
-<<<<<<< HEAD
             var userPassword = sessionStorage.getItem("userPassword");
             var memberId = sessionStorage.getItem("memberId");
             
@@ -47,14 +42,6 @@
             document.getElementById("userName").textContent = "이름: " + userName;
             document.getElementById("userEmail").textContent = "이메일: " + userEmail;
             document.getElementById("userPassword").textContent = "비밀번호: " + userPassword;
-=======
-            var memberId = sessionStorage.getItem("memberId");
-            var userPassword = sessionStorage.getItem("userPassword");
-
-            document.getElementById("userName").textContent = "이름: " + userName;
-            document.getElementById("userEmail").textContent = "이메일: " + userEmail;
-            document.getElementById("memberId").textContent = "아이디: " + memberId;
->>>>>>> 6784b74affd87bda72f1f08a4dcb6ef091c9c457
 
             // 비밀번호가 null로 표시되는 문제 해결
             if (userPassword && userPassword !== "null") {
